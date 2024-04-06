@@ -52,7 +52,7 @@ class CH347:
 
     INVALID_HANDLE_VALUE = ctypes.c_void_p(-1).value
     
-    def __init__(self, device_index=0, dll_path="ch347/lib/CH347DLLA64.DLL"):
+    def __init__(self, device_index=0, dll_path="CH347DLLA64.DLL"):
         self.ch347dll = ctypes.WinDLL(dll_path)
         self.device_index = device_index
 
